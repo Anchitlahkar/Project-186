@@ -18,7 +18,7 @@
 
         <a-entity id="particles">
             <a-entity id="particle-1" spe-particles="
-                color:red,yellow,green,blue,orange,pink,purple,violet;
+                color:black;
                 distribution:sphere;
                 randomize-velocity:true;
                 radius:2;
@@ -26,7 +26,7 @@
                 velocity: 1;
                 velocity-spread: 30;
                 drag:0;
-                max-age:5;
+                max-age:5
                 duration:00;
                 blending:additive;
                 active-multiplier:3000;
@@ -34,7 +34,7 @@
             </a-entity>
 
             <a-entity id="particle-2" spe-particles="
-                color:green,blue,orange,pink,red,yellow,purple,violet;
+                color:black;
                 distribution:sphere;
                 randomize-velocity:true;
                 radius:2;
@@ -42,7 +42,7 @@
                 velocity: 1;
                 velocity-spread: 30;
                 drag:0;
-                max-age:5;
+                max-age:5
                 duration:0;
                 blending:additive;
                 active-multiplier:3000;
@@ -50,7 +50,7 @@
             </a-entity>
 
             <a-entity id="particle-3" spe-particles="
-                color:orange,pink,purple,violet,red,yellow,green,blue;
+                color:black;
                 distribution:sphere;
                 randomize-velocity:true;
                 radius:2;
@@ -58,7 +58,7 @@
                 velocity: 1;
                 velocity-spread: 30;
                 drag:0;
-                max-age:5;
+                max-age:5
                 duration:0;
                 blending:additive;
                 active-multiplier:3000;
@@ -66,7 +66,7 @@
             </a-entity>
 
             <a-entity id="particle-4" spe-particles="
-                color:yellow,green,violet,red,blue,orange,pink,purple,violet,red,yellow,green,blue;
+                color:black;
                 distribution:sphere;
                 randomize-velocity:true;
                 radius:2;
@@ -74,7 +74,7 @@
                 velocity: 1;
                 velocity-spread: 30;
                 drag:0;
-                max-age:5;
+                max-age:5
                 duration:0;
                 blending:additive;
                 active-multiplier:3000;
@@ -82,15 +82,47 @@
             </a-entity>
 
             <a-entity id="particle-5" spe-particles="
-                color:violet,red,yellow,green,orange,pink,purple,blue;
+                color:black;
                 distribution:sphere;
                 randomize-velocity:true;
                 radius:2;
                 particle-count: 2400;
                 velocity: 1;
-                velocity-spread: 30;
+                velocity-spread: 40;
                 drag:0;
-                max-age:5;
+                max-age:5
+                duration:0;
+                blending:additive;
+                active-multiplier:3000;
+                size:1,1,1,0;" visible="false">
+            </a-entity>
+
+            <a-entity id="particle-6" spe-particles="
+                color:black;
+                distribution:sphere;
+                randomize-velocity:true;
+                radius:2;
+                particle-count: 2400;
+                velocity: 1;
+                velocity-spread: 40;
+                drag:0;
+                max-age:5
+                duration:0;
+                blending:additive;
+                active-multiplier:3000;
+                size:1,1,1,0;" visible="false">
+            </a-entity>
+
+            <a-entity id="particle-7" spe-particles="
+                color:black;
+                distribution:sphere;
+                randomize-velocity:true;
+                radius:2;
+                particle-count: 2400;
+                velocity: 1;
+                velocity-spread: 40;
+                drag:0;
+                max-age:5
                 duration:0;
                 blending:additive;
                 active-multiplier:3000;
@@ -100,7 +132,7 @@
         </a-entity>
 
         <a-entity id="rocket">
-            <a-entity position="-20 -15 0" id="rocket-1" rocket_fly>
+            <a-entity position="-30 -15 0" id="rocket-1" rocket_fly>
                 <a-cone position="0 -6.33159 0" radius-bottom="0.5" scale="1.2469 1.34117 1.1175" material="color: red"
                     geometry=""></a-cone>
 
@@ -109,7 +141,7 @@
                 </a-cylinder>
             </a-entity>
 
-            <a-entity position="-10 -15 0" id="rocket-2" rocket_fly>
+            <a-entity position="-20 -15 0" id="rocket-2" rocket_fly>
                 <a-cone position="0 -6.33159 0" radius-bottom="0.5" scale="1.2469 1.34117 1.1175" material="color: red"
                     geometry=""></a-cone>
 
@@ -118,7 +150,7 @@
                 </a-cylinder>
             </a-entity>
 
-            <a-entity position="0 -15 0" id="rocket-3" rocket_fly>
+            <a-entity position="-10 -15 0" id="rocket-3" rocket_fly>
                 <a-cone position="0 -6.33159 0" radius-bottom="0.5" scale="1.2469 1.34117 1.1175" material="color: red"
                     geometry=""></a-cone>
 
@@ -127,7 +159,7 @@
                 </a-cylinder>
             </a-entity>
 
-            <a-entity position="10 -15 0" id="rocket-4" rocket_fly>
+            <a-entity position="0 -15 0" id="rocket-4" rocket_fly>
                 <a-cone position="0 -6.33159 0" radius-bottom="0.5" scale="1.2469 1.34117 1.1175" material="color: red"
                     geometry=""></a-cone>
 
@@ -136,7 +168,25 @@
                 </a-cylinder>
             </a-entity>
 
-            <a-entity position="20 -15 0" id="rocket-5" rocket_fly>
+            <a-entity position="10 -15 0" id="rocket-5" rocket_fly>
+                <a-cone position="0 -6.33159 0" radius-bottom="0.5" scale="1.2469 1.34117 1.1175" material="color: red"
+                    geometry=""></a-cone>
+
+                <a-cylinder position="0 -8 0" height="2" width="1" radius-top="0.5" radius-bottom="0.5"
+                    scale="0.61938 1 0.55801" id="rocket-body-1" material="" geometry="">
+                </a-cylinder>
+            </a-entity>
+            
+            <a-entity position="20 -15 0" id="rocket-6" rocket_fly>
+                <a-cone position="0 -6.33159 0" radius-bottom="0.5" scale="1.2469 1.34117 1.1175" material="color: red"
+                    geometry=""></a-cone>
+
+                <a-cylinder position="0 -8 0" height="2" width="1" radius-top="0.5" radius-bottom="0.5"
+                    scale="0.61938 1 0.55801" id="rocket-body-1" material="" geometry="">
+                </a-cylinder>
+            </a-entity>
+            
+            <a-entity position="30 -15 0" id="rocket-7" rocket_fly>
                 <a-cone position="0 -6.33159 0" radius-bottom="0.5" scale="1.2469 1.34117 1.1175" material="color: red"
                     geometry=""></a-cone>
 
