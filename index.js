@@ -33,7 +33,7 @@ AFRAME.registerComponent('rocket_fly', {
 
                     fireWork.setAttribute("position", { x: position.x, y: position.y - 5, z: position.z })
                     fireWork.setAttribute("visible", true)
-                    fireWork.setAttribute("spe-particles", { duration: 1 })
+                    fireWork.setAttribute("spe-particles", { duration: 8 })
 
                     if (count < 6) {
                         count += 1
