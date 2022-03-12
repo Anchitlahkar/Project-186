@@ -12,7 +12,7 @@ AFRAME.registerComponent('rocket_fly', {
     },
 
     init: function () {
-        window.addEventListener("keydown", (e) => {
+        window.addEventListener("click", (e) => {
 
             if (e) {
                 el = document.getElementById(`rocket-${count}`)
