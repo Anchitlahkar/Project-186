@@ -97,6 +97,5 @@ AFRAME.registerComponent('rocket_fly', {
 
         return colorList
     },
-
-
+    
 });
