@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+
+    <script src="./index.js"></script>
+</head>
+
+
+<body>
+
+    <a-scene id="scene">
+
+        <a-entity id="particles">
+            <a-entity id="particle-1" spe-particles="
+                color:red,yellow,green,blue,orange,pink,purple,violet;
+                distribution:sphere;
+                randomize-velocity:true;
+                radius:1;
+                particle-count: 800;
+                velocity: 1;
+                velocity-spread: 25;
+                drag:0.2;
+                max-age:5;
+                duration:00;
+                blending:additive;
+                active-multiplier:1000;
+                size:1,1,1,0;" visible="false">
+            </a-entity>
+
+            <a-entity id="particle-2" spe-particles="
+                color:green,blue,orange,pink,red,yellow,purple,violet;
+                distribution:sphere;
+                randomize-velocity:true;
+                radius:1;
+                particle-count: 800;
+                velocity: 1;
+                velocity-spread: 25;
+                drag:0.2;
+                max-age:5;
+                duration:0;
+                blending:additive;
+                active-multiplier:1000;
+                size:1,1,1,0;" visible="false">
+            </a-entity>
+
+            <a-entity id="particle-3" spe-particles="
+                color:orange,pink,purple,violet,red,yellow,green,blue;
+                distribution:sphere;
+                randomize-velocity:true;
+                radius:1;
+                particle-count: 800;
+                velocity: 1;
+                velocity-spread: 25;
+                drag:0.2;
+                max-age:5;
+                duration:0;
+                blending:additive;
+                active-multiplier:1000;
+                size:1,1,1,0;" visible="false">
+            </a-entity>
+
+            <a-entity id="particle-4" spe-particles="
+                color:yellow,green,violet,red,blue,orange,pink,purple,violet,red,yellow,green,blue;
+                distribution:sphere;
+                randomize-velocity:true;
+                radius:1;
+                particle-count: 800;
+                velocity: 1;
+                velocity-spread: 25;
+                drag:0.2;
+                max-age:5;
+                duration:0;
+                blending:additive;
+                active-multiplier:1000;
+                size:1,1,1,0;" visible="false">
+            </a-entity>
+
+            <a-entity id="particle-5" spe-particles="
+                color:violet,red,yellow,green,orange,pink,purple,blue;
+                distribution:sphere;
+                randomize-velocity:true;
+                radius:1;
+                particle-count: 800;
+                velocity: 1;
+                velocity-spread: 25;
+                drag:0.2;
+                max-age:5;
+                duration:0;
+                blending:additive;
+                active-multiplier:1000;
+                size:1,1,1,0;" visible="false">
+            </a-entity>
+
+        </a-entity>
+
+        <a-entity id="rocket">
+            <a-entity position="-20 -15 0" id="rocket-1" rocket_fly>
+                <a-cone position="0 -6.33159 0" radius-bottom="0.5" scale="1.2469 1.34117 1.1175" material="color: red"
+                    geometry=""></a-cone>
+
+                <a-cylinder position="0 -8 0" height="2" width="1" radius-top="0.5" radius-bottom="0.5"
+                    scale="0.6 1 0.6" id="rocket-body-1" material="" geometry="">
+                </a-cylinder>
+            </a-entity>
+
+            <a-entity position="-10 -15 0" id="rocket-2" rocket_fly>
+                <a-cone position="0 -6.33159 0" radius-bottom="0.5" scale="1.2469 1.34117 1.1175" material="color: red"
+                    geometry=""></a-cone>
+
+                <a-cylinder position="0 -8 0" height="2" width="1" radius-top="0.5" radius-bottom="0.5"
+                    scale="0.61938 1 0.55801" id="rocket-body-1" material="" geometry="">
+                </a-cylinder>
+            </a-entity>
+
+            <a-entity position="0 -15 0" id="rocket-3" rocket_fly>
+                <a-cone position="0 -6.33159 0" radius-bottom="0.5" scale="1.2469 1.34117 1.1175" material="color: red"
+                    geometry=""></a-cone>
+
+                <a-cylinder position="0 -8 0" height="2" width="1" radius-top="0.5" radius-bottom="0.5"
+                    scale="0.61938 1 0.55801" id="rocket-body-1" material="" geometry="">
+                </a-cylinder>
+            </a-entity>
+
+            <a-entity position="10 -15 0" id="rocket-4" rocket_fly>
+                <a-cone position="0 -6.33159 0" radius-bottom="0.5" scale="1.2469 1.34117 1.1175" material="color: red"
+                    geometry=""></a-cone>
+
+                <a-cylinder position="0 -8 0" height="2" width="1" radius-top="0.5" radius-bottom="0.5"
+                    scale="0.61938 1 0.55801" id="rocket-body-1" material="" geometry="">
+                </a-cylinder>
+            </a-entity>
+
+            <a-entity position="20 -15 0" id="rocket-5" rocket_fly>
+                <a-cone position="0 -6.33159 0" radius-bottom="0.5" scale="1.2469 1.34117 1.1175" material="color: red"
+                    geometry=""></a-cone>
+
+                <a-cylinder position="0 -8 0" height="2" width="1" radius-top="0.5" radius-bottom="0.5"
+                    scale="0.61938 1 0.55801" id="rocket-body-1" material="" geometry="">
+                </a-cylinder>
+            </a-entity>
+        </a-entity>
+
+        <a-camera position="0 0 30">
+            <a-text position="-29.60247 13.05243 -18.27112" id="text-1"
+                text="width: 20; color: red; value: Please 'press' and 'hold' any key to launch the fireworks"></a-text>
+
+            <a-text position="-29.60247 13.05243 -18.27112" id="text-2"
+                text="width: 20; color: red; value: Press 'r' to reload" visible="false"></a-text>
+        </a-camera>
+
+        <a-sky color="#000"></a-sky>
+
+    </a-scene>
+</body>
+
+</html>
