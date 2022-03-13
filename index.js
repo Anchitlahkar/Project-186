@@ -14,13 +14,13 @@ AFRAME.registerComponent('rocket_fly', {
     init: function () {
         window.addEventListener("keydown", (e) => {
             if (e) {
-                this.fire(e)
+                this.fire(e, 0.5)
             }
         }),
 
             window.addEventListener("click", (e) => {
                 if (e) {
-                    this.fire(e)
+                    this.fire(e, 3)
                 }
             }),
 
@@ -34,7 +34,7 @@ AFRAME.registerComponent('rocket_fly', {
 
     },
 
-    fire: function (e) {
+    fire: function (e, speed) {
 
         el = document.getElementById(`rocket-${count}`)
         var position = el.getAttribute("position")
@@ -43,7 +43,7 @@ AFRAME.registerComponent('rocket_fly', {
             el.setAttribute("position",
                 {
                     x: position.x,
-                    y: position.y + 0.25,
+                    y: position.y + speed,
                     z: position.z
                 }
             )
@@ -62,7 +62,7 @@ AFRAME.registerComponent('rocket_fly', {
             fireWork.setAttribute("visible", true)
             fireWork.setAttribute("spe-particles",
                 {
-                    duration: 10,
+                    duration: 20,
                     color: this.colorSelector()
                 }
             )
